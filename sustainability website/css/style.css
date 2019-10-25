@@ -1,0 +1,1094 @@
+/* Variables */
+:root {
+  --blue: #299db3;
+  --lightBlue: #6EE2F4;
+  --newBlue: #1db4d1;
+  --green: #95b222;
+  --lightGreen: #D6EBB3;
+
+  --font: 'Poppins', sans-serif;
+  --font2: 'Abril Fatface', cursive;
+}
+
+/* General */
+::selection {
+  background: #242424;
+  color: white;
+}
+
+::-moz-selection {
+  background: #242424;
+  color: white;
+}
+
+/* General */
+body {
+  font-family: var(--font);
+  margin: 0;
+  background-color: rgb(155, 174, 204);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*height: 20000px;*/
+}
+
+h2 {
+  font-size: 50px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0 30px 0px;
+  margin: 0;
+  background: white;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 17px;
+}
+
+/* Navbar */
+#navbarUl {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #1db4d1;
+  z-index: 99;
+}
+
+.navbarLiLogo {
+  float: left;
+  position: fixed;
+}
+
+.navbarLiLogo img {
+  margin: 10px 0 0 10px;
+  height: 55px;
+}
+
+.navbarLi {
+  float: right;
+}
+
+.navbarLi a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbarLiButton {
+  border: 3.5px solid white;
+  border-radius: 7px;
+  margin: 11px 11px 0 0;
+  padding: 10px;
+  position: relative;
+}
+
+#navbarLiButton:hover {
+  background: white;
+  color: #1db4d1;
+}
+
+/* Top Picture */
+#topPic {
+  margin-top: 70px;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 450px;
+  z-index: -10;
+  background: url(../img/Wiese2.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  margin-bottom: 0;
+}
+
+#topPic p {
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--font1);
+}
+
+#topPicP1 {
+  top: 120px;
+  font-size: 90px;
+  z-index: 1;
+  width: 100%;
+}
+
+#topPicP2 {
+  top: 220px;
+  font-size: 90px;
+  z-index: 1;
+  width: 100%;
+}
+
+#topPicP3 {
+  top: 380px;
+  font-size: 60px;
+  width: 100%;
+}
+
+/* Infos */
+#infos {
+  margin: 0;
+  padding: 10% 5% 175px 5%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8%;
+  grid-row-gap: 80px;
+}
+
+.info {
+  display: block;
+  box-shadow: 5px 5px 20px #c2c2c2;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.info h3 {
+  font-weight: bold;
+  padding-left: 20px;
+  padding-bottom: 0;
+}
+
+.info p {
+  padding: 0 20px 20px 20px;
+}
+
+#info1Pic {
+  background: url(../img/Ziel.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 7px 7px 0 0;
+}
+
+#info2Pic {
+  background: url(../img/Fokus.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 7px 7px 0 0;
+}
+
+#info3Pic {
+  background: url(../img/Gebiet.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 7px 7px 0 0;
+}
+
+#info4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-column: 2fr;
+  grid-row: 1fr;
+}
+
+#info4Pic {
+  background: url(../img/Gruendung.jpg) no-repeat top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 335px;
+  height: 300px;
+  border-radius: 7px;
+  grid-column: 1;
+  grid-row: 1;
+  box-shadow: 5px 5px 20px #c2c2c2;
+}
+
+#info4Text {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#info4Text a {
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+  float: right;
+  color: gray;
+  text-decoration: none;
+}
+
+/* Calender */
+#calender {
+  background-color: white;
+  height: 1500px;
+}
+
+.calenderElement {
+  display: block;
+  margin: 0;
+  width: 80%;
+  max-width: 700px;
+  margin: 75px auto auto auto;
+  height: 120px;
+}
+
+.calenderDate {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 0;
+  clear: none;
+}
+
+.calenderDateWeekday {
+  color: red;
+  font-size: 20px;
+}
+
+.calenderDateDay {
+  font-size: 30px;
+  margin-top: -4px;
+}
+
+.calenderDateHour {
+  font-size: 20px;
+}
+
+.calenderDateMonth {
+  font-size: 20px;
+  margin-top: -6px;
+}
+
+.calenderText {
+  float: right;
+  margin: 0;
+  width: 75%;
+  display: block;
+  clear: none;
+}
+
+.calenderTextTitle {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.calenderTextText {
+  font-size: 20px;
+}
+
+/* Idea */
+#idea {
+  margin: 0 0 40px 0;
+  display: block;
+}
+
+#idea:before {
+  margin: 0;
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)),
+          url(../img/Wiese.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#idea h2 {
+  margin: 0 auto 0 auto;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  line-height: 80px;
+  width: 90%;
+  max-width: 900px;
+  background: none;
+}
+
+#idea h3 {
+  margin: 40px auto 10px auto;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+#ideaTextField {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 0;
+}
+
+#ideaTextField textarea {
+  display: block;
+  z-index: 2;
+  margin: 0;
+  width: 100%;
+  height: 150px;
+  padding: 12px 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  font-family: var(--font);
+  -webkit-appearance: none;
+  transition: height 0.5s, width 0.5s, margin 0.5s, box-shadow 0.5s, border-radius 0.5s;
+  -webkit-transition: height 0.5s, width 0.5s, margin 0.5s, box-shadow 0.5s, border-radius 0.5s;
+}
+
+#ideaTextField textarea:focus {
+  height: 160px;
+  width: 104%;
+  margin: -5px 0 -5px -2%;
+  border-radius: 10px;
+}
+
+#ideaTextField textarea:hover {
+  height: 160px;
+  width: 104%;
+  margin: -5px 0 -5px -2%;
+  border-radius: 10px;
+}
+
+#ideaTextField input {
+  display: block;
+  z-index: 2;
+  margin: 15px 0 0 0;
+  width: 100%;
+  height: 50px;
+  padding: 12px 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  border-radius: 7px;
+  font-family: var(--font);
+  -webkit-appearance: none;
+  transition: height 0.5s, width 0.5s, margin 0.5s, box-shadow 0.5s, border-radius 0.5s;
+  -webkit-transition: height 0.5s, width 0.5s, margin 0.5s, box-shadow 0.5s, border-radius 0.5s;
+}
+
+#ideaTextField input:focus {
+  height: 60px;
+  width: 104%;
+  margin: 10px 0 -5px -2%;
+  border-radius: 10px;
+}
+
+#ideaTextField input:hover {
+  height: 60px;
+  width: 104%;
+  margin: 10px 0 -5px -2%;
+  border-radius: 10px;
+}
+
+#ideaSendButton {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 7px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: 5px solid white;
+  font-family: var(--font);
+  cursor: pointer;
+  max-width: 800px;
+}
+
+#ideaSendButton:hover {
+  background-color: white;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+#idea h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+#ideaMitgliedWerden {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 13px 0;
+  border-radius: 7px;
+  margin: 11px auto 0 auto;
+  position: relative;
+  background: linear-gradient(to right, #35b8e8, #60d17c);
+  display: block;
+  width: 80%;
+  text-align: center;
+  max-width: 800px;
+  box-shadow: 0 0 25px 0 rgb(0, 0, 0, 0.3);
+  -webkit-transition: padding 0.5s, margin 0.5s, font-size 0.5s, box-shadow 0.5s, background 0.5s;
+  transition: padding 0.5s, margin 0.5s, font-size 0.5s, box-shadow 0.5s, background 0.5s;
+}
+
+#ideaMitgliedWerden:hover {
+  max-width: 800Px;
+  padding: 17px 20px;
+  margin: 2px auto 0 auto;
+  font-size: 22px;
+  box-shadow: 0 0 50px 10px rgb(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #00bbff, #26d451);
+}
+
+/* Ressorts */
+#ressorts {
+  margin: 0;
+  padding: 75px 0px 75px 0;
+  background: white;
+}
+
+.ressortText {
+  display: block;
+  float: center;
+  margin: 50px auto 50px auto;
+  max-width: 500px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 15px #dbdbdb;
+  color: black;
+  height: 170px
+  /*grid-column: 2/4;*/
+}
+
+
+.ressortTextBg {
+  width: 100%;
+  height: 0;
+  margin-bottom: 180px;
+  border-radius: 7px;
+  position: relative;
+  -webkit-transition: margin 0.5s, height 0.5s, color 0.5s;
+  transition: margin 0.5s, height 0.5s, color 0.5s;
+}
+
+.ressortText:hover > .ressortTextBg {
+  height: 170px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.ressortText h3 {
+  font-size: 30px;
+  margin: 15px calc(100% - 115px) 10px 15px;
+  float: left;
+  color: white;
+  border-radius: 7px;
+  height: 55px;
+}
+
+.ressortTitle {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  padding:  5px 0 0 5px;
+  border-radius: 7px;
+  position: relative;
+  background-color: none;
+  color: white;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.ressortText:hover .ressortTitle {
+  -webkit-transition: background-color 0.2s 0.05s, color 0.2s 0.05s;
+  transition: background-color 0.2s 0.05s, color 0.2s 0.05s;
+  background-color: white;
+  color: black;
+}
+
+.ressortText p {
+  width: 100%;
+  padding: 75px 15px 50px 15px;
+  max-width: 475px;
+  font-weight: bold;
+}
+
+#ressortText1 h3 {
+  background: linear-gradient(to bottom right, #ff4545, #ff7045);
+  width: 145px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText1Bg {
+    background: linear-gradient(to bottom right, #ff4545, #ff7045);
+}
+
+#ressortText2 h3 {
+  background: linear-gradient(to bottom right, #ffa047, #ffc847);
+  width: 145px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText2Bg {
+    background: linear-gradient(to bottom right, #ffa047, #ffc847);
+}
+
+
+#ressortText3 h3 {
+  background: linear-gradient(to bottom right, #ffd747, #fff347);
+  width: 75px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText3Bg {
+    background: linear-gradient(to bottom right, #ffd747, #fff347);
+}
+
+
+#ressortText4 h3 {
+  background: linear-gradient(to bottom right, #90e835, #35e89a);
+  width: 65px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText4Bg {
+    background: linear-gradient(to bottom right, #90e835, #35e89a);
+}
+
+#ressortText5 h3 {
+  background: linear-gradient(to bottom right, #41f0e5, #41c7f0);
+  width: 205px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText5Bg {
+    background: linear-gradient(to bottom right, #41f0e5, #41c7f0);
+}
+
+
+#ressortText6 h3 {
+  background: linear-gradient(to bottom right, #7096cf, #7570cf);
+  width: 217px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText6Bg {
+    background: linear-gradient(to bottom right, #7096cf, #7570cf);
+}
+
+#ressortText7 h3 {
+  background: linear-gradient(to bottom right, #d49ee6, #faaae8);
+  width: 380px;
+  -webkit-transition: box-shadow 0.7s, background-color 0.5s;
+  transition: box-shadow 0.7s, background-color: 0.5s;
+}
+
+#ressortText7Bg {
+    background: linear-gradient(to bottom right, #d49ee6, #faaae8);
+}
+
+
+/* Vorstand */
+#vorstand {
+  background: white;
+  margin: 0;
+  height: 800px;
+}
+
+#vorstand h3 {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline;
+}
+
+.vorstandElement {
+  width: 700px;
+  padding: 0 0 0 18%;
+  margin: 0 auto 50px auto;
+}
+
+#vorstandBild1 {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  position: relative;
+  top: 50px;
+  margin: 0 30px;
+}
+
+#vorstandBild2 {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  position: relative;
+  top: 50px;
+  margin: 0 30px;
+}
+
+#vorstandBild3 {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  position: relative;
+  top: 50px;
+  margin: 0 30px;
+}
+
+
+/* Ziele */
+#ziele {
+
+}
+
+/* Instagram */
+#instagram {
+  background: white;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+#instagramTitel {
+  display: block;
+  margin: 0 auto;
+  background-color: #f54242;
+  width: 340px;
+  padding: 0 40px;
+  border-radius: 7px;
+}
+
+#instagramTitel h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+  display: block;
+  padding: 0;
+  background: none;
+}
+
+#instagram h3 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #f54242;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+/* Impressum */
+.legal {
+    text-align: center;
+    background-color: #262626;
+    margin: 0;
+    padding: 15px 0 15px 0;s
+}
+
+.legal a {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.legal a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+  /* TABLET SCREEN */
+  @media screen and (max-width: 920px) {
+    /* Top Picture */
+    #topPic {
+      background: url(../img/Wiese2920.jpeg) no-repeat center center;
+    }
+
+    #topPicP1 {
+      font-size: 70px;
+    }
+
+    #topPicP2 {
+      top: 210px;
+      font-size: 70px;
+    }
+
+    #topPicP3 {
+      top: 400px;
+      font-size: 50px;
+    }
+
+    /* Idea */
+    #idea:before {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)),
+            url(../img/Wiese920.jpeg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    /* Info */
+    #infos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #info4 {
+      grid-column: 2;
+      grid-row: 2;
+      display: block;
+    }
+
+    #info4Pic {
+      height: 200px;
+      background-position: top;
+      width: 100%;
+    }
+
+    /* Vorstand */
+    .vorstandElement {
+      width: 88%;
+      padding: 0 0 0 12%;
+    }
+
+  }
+
+  /* SMARTPHONE SCREEN */
+  @media screen and (max-width: 630px) {
+    /* Navbar */
+    .navbarLi {
+      margin-top: 60px;
+      float: left;
+    }
+
+    .navbarLi a {
+        padding: 20px 10px;
+    }
+
+    #navbarLiButton {
+      position: fixed;
+      right: 0px;
+      top: 0px;
+    }
+
+    /* Top Picture */
+    #topPic {
+      margin-top: 120px;
+      background: url(../img/Wiese2920.jpeg) no-repeat center center;
+      height: 300px;
+    }
+
+    #topPicP1 {
+      top: 165px;
+      font-size: 50px;
+    }
+
+    #topPicP2 {
+      top: 225px;
+      font-size: 50px;
+    }
+
+    #topPicP3 {
+      top: 350px;
+      font-size: 35px;
+    }
+
+    /* Calender */
+    .calenderElement {
+      width: 90%;
+    }
+
+    .calenderText {
+      width: 60%;
+      padding-left: 15%;
+    }
+
+    .calenderTextTitle {
+      font-size: 25px;
+    }
+
+    .calenderTextText {
+      font-size: 18px;
+    }
+
+    /* Idea */
+    #idea:before {
+      background: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.3)),
+              url(../img/Wiese920.jpeg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    /* Infos */
+    #infos {
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+      padding-bottom: 50px;
+    }
+
+    #info1 {
+      grid-column: 1;
+      grid-row: 1;
+      width: 100%;
+    }
+
+    #info2 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    #info3 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    #info4 {
+      grid-column: 1;
+      grid-row: 4;
+      display: block;
+    }
+
+    #info4Pic {
+      width: 100%;
+      height: 225px;
+    }
+
+    /* Idea */
+    #idea h2 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    /* Ressorts */
+    #ressorts {
+      grid-column-gap: 20px;
+      grid-row-gap: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .ressortText {
+      margin: 25px auto 25px auto;
+    }
+
+    .ressortText p {
+      width: 95%;
+    }
+
+    #ressortImg1 {
+      margin: auto;
+    }
+
+    #ressortImg2 {
+      margin: auto;
+    }
+
+    #ressortImg3 {
+      margin: auto;
+    }
+
+    #ressortImg4 {
+      margin: auto;
+    }
+
+    #ressortImg5 {
+      margin: auto;
+    }
+
+    .ressortText:focus > .ressortTextBg {
+      height: 160px;
+      color: white;
+      margin-bottom: 0;
+    }
+
+    /* Vorstand */
+    .vorstandElement {
+      width: calc(100% - 10px);
+      padding: 0 0 0 10px;
+      margin: 0 auto 50px auto;
+    }
+
+  }
+
+  @media screen and (max-width: 470px) {
+    /* General */
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    /* Navbar */
+    #navbarUl {
+      height: 70px;
+    }
+
+    .navbarLiLogo img {
+      margin: 9.5px 0 0 7px;
+      height: 50px;
+    }
+
+    .navbarLi a {
+      display: none;
+    }
+
+    #navbarLiButton {
+      margin: 10px 10px 0 0;
+      padding: 9px;
+      display: block;
+    }
+
+    /* Top Picture */
+    #topPic {
+      margin-top:50px;
+    }
+
+    #topPicP1 {
+      top: 100px;
+      font-size: 40px;
+    }
+
+    #topPicP2 {
+      top: 150px;
+      font-size: 40px;
+    }
+
+    #topPicP3 {
+      top: 280px;
+      font-size: 35px;
+    }
+
+    /* Ressorts */
+    .ressortText {
+      height: 180px;
+    }
+
+    .ressortText:hover > .ressortTextBg {
+      height: 180px;
+      color: white;
+      margin-bottom: 0;
+    }
+
+    .ressortText p {
+      width: 94%;
+      height: 75px;
+    }
+
+    #ressortText7 h3 {
+      font-size: 23.5px;
+      width: 310px;
+    }
+
+    /* Vorstand */
+    #vorstand {
+      height: 630px;
+    }
+
+    #vorstand h2 {
+      padding-bottom: 10px;
+    }
+
+    #vorstand h3 {
+      font-size: 25px;
+    }
+
+    .vorstandElement {
+      padding: 0;
+      margin: 0 auto 30px auto;
+    }
+
+    #vorstandBild1 {
+      width: 100px;
+      height: 100px;
+      margin: 0 20px 0 10px;
+      top: 40px;
+    }
+
+    #vorstandBild2 {
+      width: 100px;
+      height: 100px;
+      margin: 0 20px 0 10px;
+      top: 40px;
+    }
+
+    #vorstandBild3 {
+      width: 100px;
+      height: 100px;margin: 0 20px 0 10px;
+      top: 40px;
+    }
+
+    /* Instagram */
+    #instagramTitel {
+      width: 320px;
+      margin: auto;
+      padding: 0px;
+    }
+
+    #instagramTitel h2 {
+      font-size: 40px;
+    }
+
+    #instagram h3 {
+      font-size: 40px;
+    }
+
+  }
+
+}
